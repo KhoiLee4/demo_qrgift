@@ -9,7 +9,7 @@ export default function BarcodeGenerator({ text }) {
       JsBarcode(svgRef.current, text, {
         format: "CODE128",
         lineColor: "#000",
-        width: 2.31, // vừa 15 ký tự trong 360px
+        width: 1.96, // vừa 15 ký tự trong 360px
         height: 80, // chiều cao
         margin: 4,
         displayValue: true,
