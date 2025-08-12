@@ -9,14 +9,14 @@ export default function BarcodeGenerator({ text }) {
       JsBarcode(svgRef.current, text, {
         format: "CODE128",
         lineColor: "#000",
-        width: 2.5, // vừa 15 ký tự trong 360px
-        height: 80, // chiều cao
+        width: 1.6,
+        height: 80,
         margin: 4,
         displayValue: true,
       });
 
       // Fit đúng khung 360x80
-      svgRef.current.setAttribute("width", "365");
+      svgRef.current.setAttribute("width", "360");
       svgRef.current.setAttribute("height", "80");
     }
   }, [text]);
