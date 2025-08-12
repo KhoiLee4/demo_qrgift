@@ -8,7 +8,7 @@ export default function CreatePage() {
   const [input, setInput] = useState("Hello World");
 
   const generateRandom = () => {
-    setInput(nanoid(16));
+    setInput(nanoid(20));
   };
 
   return (
